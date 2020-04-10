@@ -27,7 +27,10 @@ public class NhanVien {
         this.tongGioLam = tongGioLam;
     }
     public String getThongTin() {
-        return String.format("");
+        return "Ten: " + getTen() + "\nTuoi: " + getTuoi() + 
+               "\nDia chi: " + getDiaChi() + "\nTien luong: " + getTienLuong() +
+               "\nTong gio lam: " + getTongGioLam() + "\nTinh Thuong: " +
+               tinhThuong();
     }
     
     public double tinhThuong() {
