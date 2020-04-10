@@ -14,7 +14,6 @@ public class BaiTap1Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        NhanVien nhanvien = new NhanVien();
         
     }
 }
