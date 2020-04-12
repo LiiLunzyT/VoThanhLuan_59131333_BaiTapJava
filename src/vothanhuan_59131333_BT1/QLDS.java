@@ -13,15 +13,16 @@ public class QLDS implements IQLDS{
     ArrayList<CaNhan> dsCaNhan;
 
     public QLDS() {
+        dsCaNhan = new ArrayList<CaNhan>();
     }
 
-    public QLDS(ArrayList<CaNhan> ls) {
+    public QLDS(ArrayList<CaNhan> dsCaNhan) {
         this.dsCaNhan = dsCaNhan;
     }
     
     @Override
     public int them(CaNhan p) {
-        return dsCaNhan.add(p) ? 1 : 0;
+        return dsCaNhan.add(p)? 1 : 0;
     }
 
     @Override
@@ -37,9 +38,9 @@ public class QLDS implements IQLDS{
     }
 
     @Override
-    public void inDS(ArrayList<CaNhan> ls) {
-        for(CaNhan c : ls) {
-            c.HienThiTT();
+    public void inDS() {
+        for(CaNhan c : dsCaNhan) {
+            System.out.println(c.HienThiTT());
         }
     }
 

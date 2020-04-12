@@ -11,61 +11,63 @@ import java.util.ArrayList;
  * @author ASUS
  */
 public class LopHoc {
-    ArrayList<CaNhan> hocSinh;
-    ArrayList<CaNhan> giaoVien;
     GiaoVien giaoVienCN;
-    QLDS qldsHS = new QLDS(hocSinh);
-    QLDS qldsGVGD = new QLDS(giaoVien);
+    QLDS qldsHS;
+    QLDS qldsGVGD;
 
     public LopHoc() {
+        qldsHS = new QLDS();
+        qldsGVGD = new QLDS();
     }
 
-    public LopHoc(QLDS qldsGVGD, QLDS qldsHS, GiaoVien giaoVienCN) {
-        this.qldsGVGD = qldsGVGD;
-        this.qldsHS = qldsHS;
+    public LopHoc(GiaoVien giaoVienCN, QLDS qldsHS, QLDS qldsGVGD) {
         this.giaoVienCN = giaoVienCN;
+        this.qldsHS = qldsHS;
+        this.qldsGVGD = qldsGVGD;
     }
-
+    
     public int themHocSinh(HocSinh hs) {
-        return qldsHS.them(hs);
+        qldsHS.them(hs);
+        return 1;
     }
     
     public int themGVGD(GiaoVien gv) {
-        return qldsGVGD.them(gv);
+        qldsGVGD.them(gv);
+        return 1;
     }
     
-    public int inDSHV() {
-        qldsHS.inDS(hocSinh);
-        return hocSinh.size();
+    public int inDSHS() {
+        qldsHS.inDS();
+        return 1;
     }
     
-    public int inDSGVGD() {
-        qldsGVGD.inDS(giaoVien);
-        return giaoVien.size();
-    }
-    
-    public QLDS getQldsGVGD() {
-        return qldsGVGD;
-    }
-
-    public QLDS getQldsHS() {
-        return qldsHS;
+    public int inDSGV() {
+        qldsGVGD.inDS();
+        return 1;
     }
 
     public GiaoVien getGiaoVienCN() {
         return giaoVienCN;
     }
 
-    public void setQldsGVGD(QLDS qldsGVGD) {
-        this.qldsGVGD = qldsGVGD;
+    public QLDS getQldsHS() {
+        return qldsHS;
+    }
+
+    public QLDS getQldsGVGD() {
+        return qldsGVGD;
+    }
+
+    public void setGiaoVienCN(GiaoVien giaoVienCN) {
+        this.giaoVienCN = giaoVienCN;
     }
 
     public void setQldsHS(QLDS qldsHS) {
         this.qldsHS = qldsHS;
     }
 
-    public void setGiaoVienCN(GiaoVien giaoVienCN) {
-        this.giaoVienCN = giaoVienCN;
+    public void setQldsGVGD(QLDS qldsGVGD) {
+        this.qldsGVGD = qldsGVGD;
     }
     
 }

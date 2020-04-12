@@ -16,17 +16,19 @@ public class HocSinh extends CaNhan{
     public HocSinh() {
     }
 
-    public HocSinh(String lop, String nangKhieu, String hoTen, int tuoi, String diaChi, String sdt) {
+    public HocSinh(String hoTen, int tuoi, String diaChi, String sdt, String lop, String nangKhieu) {
         super(hoTen, tuoi, diaChi, sdt);
         this.lop = lop;
         this.nangKhieu = nangKhieu;
     }
 
+    
+
     @Override
     public String HienThiTT() {
         return "Ten: " + getHoTen() + "\nTuoi: " + getTuoi() +
-               "/nDia chi: " + getDiaChi() + "\nSDT: " + getSdt() +
-               "/nLop: " + getLop() + "/nNang khieu: " + getNangKhieu();
+               "\nDia chi: " + getDiaChi() + "\nSDT: " + getSdt() +
+               "\nLop: " + getLop() + "\nNang khieu: " + getNangKhieu();
     }
 
     public String getLop() {

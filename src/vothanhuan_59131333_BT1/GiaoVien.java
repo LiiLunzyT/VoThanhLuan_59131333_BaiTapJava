@@ -16,7 +16,7 @@ public class GiaoVien extends CaNhan{
     public GiaoVien() {
     }
 
-    public GiaoVien(String monDay, String toBoMon, String hoTen, int tuoi, String diaChi, String sdt) {
+    public GiaoVien(String hoTen, int tuoi, String diaChi, String sdt, String monDay, String toBoMon) {
         super(hoTen, tuoi, diaChi, sdt);
         this.monDay = monDay;
         this.toBoMon = toBoMon;
@@ -25,8 +25,8 @@ public class GiaoVien extends CaNhan{
     @Override
     public String HienThiTT() {
         return "Ten: " + getHoTen() + "\nTuoi: " + getTuoi() +
-               "/nDia chi: " + getDiaChi() + "\nSDT: " + getSdt() +
-               "/nLop: " + getMonDay() + "/nNang khieu: " + getToBoMon();
+               "\nDia chi: " + getDiaChi() + "\nSDT: " + getSdt() +
+               "\nLop: " + getMonDay() + "\nNang khieu: " + getToBoMon();
     }
 
     public String getMonDay() {

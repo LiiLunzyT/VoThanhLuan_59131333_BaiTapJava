@@ -3,14 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package vothanhuan_59131333_BT1;
-import java.util.ArrayList;
+package vothanhluan_59131333_BaiTapJava.BaiTap2;
+import vothanhluan_59131333_BaiTapJava.BaiTap1.NhanVien;
 /**
  *
  * @author ASUS
  */
-public interface IQLDS {
-    public int them(CaNhan p);
-    public int xoa(String ten);
+public interface IQuanLy {
+    public void them(NhanVien nv);
     public void inDS();
 }
