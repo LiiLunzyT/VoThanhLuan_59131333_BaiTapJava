@@ -16,6 +16,7 @@ public abstract class ChuyenXe {
     double doanhThu;
 
     public ChuyenXe() {
+        
     }
 
     public ChuyenXe(String maSoChuyen, String hoTenTaiXe, String soXe, double doanhThu) {
