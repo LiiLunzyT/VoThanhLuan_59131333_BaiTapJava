@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package vothanhuan_59131333_BT1;
+package vothanhluan_59131333_BT1;
 import java.util.ArrayList;
 /**
  *
@@ -12,5 +12,5 @@ import java.util.ArrayList;
 public interface IQLDS {
     public int them(CaNhan p);
     public int xoa(String ten);
-    public void inDS();
+    public void inDS(ArrayList<CaNhan> ls);
 }

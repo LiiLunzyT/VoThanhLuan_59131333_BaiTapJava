@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package vothanhuan_59131333_BT1;
+package vothanhluan_59131333_BT1;
 import java.util.ArrayList;
 
 /**
@@ -11,13 +11,17 @@ import java.util.ArrayList;
  * @author ASUS
  */
 public class LopHoc {
+    ArrayList<CaNhan> hocSinh;
+    ArrayList<CaNhan> giaoVien;
     GiaoVien giaoVienCN;
     QLDS qldsHS;
     QLDS qldsGVGD;
 
     public LopHoc() {
-        qldsHS = new QLDS();
-        qldsGVGD = new QLDS();
+        hocSinh = new ArrayList();
+        giaoVien = new ArrayList();
+        qldsHS = new QLDS(hocSinh);
+        qldsGVGD = new QLDS(giaoVien);
     }
 
     public LopHoc(GiaoVien giaoVienCN, QLDS qldsHS, QLDS qldsGVGD) {
@@ -37,13 +41,15 @@ public class LopHoc {
     }
     
     public int inDSHS() {
-        qldsHS.inDS();
-        return 1;
+        System.out.println("Danh Sach Hoc sinh(" + hocSinh.size() + "): ");
+        qldsHS.inDS(hocSinh);
+        return hocSinh.size();
     }
     
     public int inDSGV() {
-        qldsGVGD.inDS();
-        return 1;
+        System.out.println("Danh Sach Giang vien(" + giaoVien.size() + "): ");
+        qldsGVGD.inDS(giaoVien);
+        return giaoVien.size();
     }
 
     public GiaoVien getGiaoVienCN() {

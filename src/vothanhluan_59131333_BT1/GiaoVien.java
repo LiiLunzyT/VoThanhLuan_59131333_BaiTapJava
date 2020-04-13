@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package vothanhuan_59131333_BT1;
+package vothanhluan_59131333_BT1;
 
 /**
  *
@@ -26,7 +26,7 @@ public class GiaoVien extends CaNhan{
     public String HienThiTT() {
         return "Ten: " + getHoTen() + "\nTuoi: " + getTuoi() +
                "\nDia chi: " + getDiaChi() + "\nSDT: " + getSdt() +
-               "\nLop: " + getMonDay() + "\nNang khieu: " + getToBoMon();
+               "\nMon day: " + getMonDay() + "\nTo bo mon: " + getToBoMon();
     }
 
     public String getMonDay() {

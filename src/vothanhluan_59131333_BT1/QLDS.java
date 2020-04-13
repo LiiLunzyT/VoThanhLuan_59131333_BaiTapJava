@@ -30,7 +30,7 @@ public class QLDS implements IQLDS{
         int count = 0;
         for(CaNhan c : dsCaNhan) {
             if(c.getHoTen() == ten) {
-                dsCaNhan.remove(c);
+                dsCaNhan.remove(c); 
                 count++;
             }
         }
