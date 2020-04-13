@@ -11,11 +11,16 @@ import java.util.ArrayList;
  * @author ASUS
  */
 public class LopHoc {
-    ArrayList<CaNhan> hocSinh;
-    ArrayList<CaNhan> giaoVien;
     GiaoVien giaoVienCN;
     QLDS qldsHS;
     QLDS qldsGVGD;
+    
+    /*
+    * ArrayList lớp CaNhan để truyền vào hàm inDS ở QLDS
+    * Do hàm inDS cần tham số đầu vào là ArrayList<CaNhan>
+    */
+    ArrayList<CaNhan> hocSinh;
+    ArrayList<CaNhan> giaoVien;
 
     public LopHoc() {
         hocSinh = new ArrayList();

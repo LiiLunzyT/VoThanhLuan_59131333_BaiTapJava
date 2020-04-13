@@ -37,6 +37,10 @@ public class QLDS implements IQLDS{
         return count;
     }
 
+    /*
+     * @Override
+     * public void inDS();
+     */
     @Override
     public void inDS(ArrayList<CaNhan> ls) {
         for(CaNhan c : ls) {
